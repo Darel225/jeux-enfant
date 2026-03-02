@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de couleurs</title>
+    <link rel="stylesheet" href="jeu.css">
+</head>
+<body>
+
+    <!-- tous les fichiers audio inseres dans le html -->
+    <audio id="son-bienvenue"><source src="bienvenue.mp4" type="video/mp4"></audio>
+    <audio id="son-jaune"><source src="jaune.mp4" type="video/mp4"></audio>
+    <audio id="son-bleu"><source src="blue.mp4" type="video/mp4"></audio>
+    <audio id="son-rouge"><source src="rouge.mp4" type="video/mp4"></audio>
+    <audio id="son-vert"><source src="vert.mp4" type="video/mp4"></audio>
+    <audio id="son-bravo"><source src="bravo.mp4" type="video/mp4"></audio>
+    <audio id="son-perdu"><source src="perdu.mp4" type="video/mp4"></audio>
+    <audio id="son-gagne"><source src="gagne.mp4" type="video/mp4"></audio>
+
+    <h1>Jeu de couleurs</h1>
+
+    <p id="question">Clique sur le bouton pour commencer</p>
+    <p id="message"></p>
+
+    <div id="zone">
+        <div id="jaune"  onclick="verifier('jaune')"></div>
+        <div id="bleu"   onclick="verifier('bleu')"></div>
+        <div id="rouge"  onclick="verifier('rouge')"></div>
+        <div id="vert"   onclick="verifier('vert')"></div>
+    </div>
+
+    <button onclick="lancer()">Jouer</button>
+
+    <script src="jeu.js"></script>
+
+</body>
+</html>
